@@ -1,0 +1,19 @@
+/*****************************************************************************/
+/* File: My.css
+/* Author: hy
+/* Date: 2014/01/06
+/* Contact: hymeldon@gmail.com
+/* Site: planetmiao.com
+/*****************************************************************************/
+
+body {
+	width:100%;
+				height:100%;
+				background: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 221, 238, 0.8)), to(#f7f7f7));
+        		background: -moz-linear-gradient(top, #f7f7f7, rgb(211, 221, 238));
+       			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e3e3e3');
+}
+
+.site .header {
+	margin:0 auto;
+}
