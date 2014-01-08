@@ -9,11 +9,144 @@
 body {
 	width:100%;
 	height:100%;
-	background: -webkit-gradient(linear, left top, left bottom, from(rgba(211, 221, 238, 0.8)), to(#f7f7f7));
-    background: -moz-linear-gradient(top, #f7f7f7, rgb(211, 221, 238));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 142, 202, 0.22)), to(#f7f7f7));
+    background: -moz-linear-gradient(top, rgb(211, 221, 238), #f7f7f7);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e3e3e3');
+    background-color: #f7f7f7;
+    background-repeat: no-repeat;
 }
 
-.site .header {
+.clear {
+	clear: both;
+}
+
+.site{
+	width: 80%;
+	max-width: 1170px;
+	min-width: 42em;
+}
+
+.header {
 	margin:0 auto;
 }
+
+.header .title a{
+	font-size:45px;
+	color:#7a3108;
+}
+
+.header .navbar {
+	float:left;
+	margin:1.5em 0 1em 0px;
+}
+
+.header .navbar ul{
+	margin-left:-12px;
+	list-style-type:none;
+	list-style-position: outside;
+}
+.header .navbar li{
+	display: inline;
+}
+
+.posts{
+	margin-left:3px;
+}
+
+.posts li{
+	background-color: rgba(255, 255, 255, 0.97);
+	padding:1.5em 1.5em 2.5em 1.5em;
+	margin:1.5em 0 1.5em 0;
+	border-radius:3px;
+	box-shadow: rgba(133, 133, 133, 0.63) 1px 1px 5px;
+}
+
+.posts li a.title{
+	text-decoration: none;
+	color: rgba(25, 25, 25, 0.8);
+}
+
+.posts li a.title:hover{
+	color: rgba(125, 0, 172, 0.95);
+}
+
+.posts .title{
+	font:1.5em "Microsoft YaHei",Arial,consolas;;
+}
+
+.posts .date{
+	float: right;
+	margin-right: 1.5em;
+	font-size:1em;
+}
+
+.posts li a.more{
+	float:right;
+	margin-right:1.5em;
+	text-decoration: none;
+	color: #aaa;
+	font-size:1em;
+}
+
+.posts li a.more:hover{
+	color: #333;
+}
+
+.post{
+	background-color: rgba(255, 255, 255, 0.97);
+	padding:1.5em;
+	margin:1.5em 0 1.5em 0;
+	border-radius:3px;
+	box-shadow: rgba(133, 133, 133, 0.63) 1px 1px 5px;
+}
+
+/*.site .post code{
+	margin:10px auto;
+	background-color: rgba(255, 255, 255, 0.97);
+}*/
+
+.post .post_info .title{
+	font:1.5em "Microsoft YaHei",Arial,consolas;
+}
+
+.post .post_info .meta{
+	margin-top:0.5em;
+	font-size:0.95em;
+}
+
+.post .content{
+}
+
+.post pre {
+  border: 1px solid #ddd;
+  background-color: rgba(252, 252, 252, 0.8);
+  padding: 0 .4em;
+  margin: 1.2em auto;
+}
+
+.post code {
+  border: 1px solid #ddd;
+  background-color: rgba(252, 252, 252, 0.8);
+  padding: 0 .2em;
+}
+
+.post pre code {
+  border: none;
+}
+
+/* terminal */
+.post pre.terminal {
+  border: 1px solid #000;
+  background-color: #333;
+  color: #FFF;
+}
+
+.post pre.terminal code {
+  background-color: #333;
+}
+
+
+.highlight code {
+	font-family: consolas, "Courier New", Courier, cursive;
+}
+
