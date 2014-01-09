@@ -16,6 +16,14 @@ body {
     background-repeat: no-repeat;
 }
 
+li {
+	list-style-type: none;
+}
+
+a{
+	text-decoration: none;
+}
+
 .clear {
 	clear: both;
 }
@@ -125,9 +133,19 @@ body {
 	font-size:0.95em;
 }
 
+.post .post_info .meta a{
+	text-decoration: none;
+	color:#aaa;
+}
+
+.post .post_info .meta a:hover{
+	color:#555;
+}
+
 .post .content{
 }
 
+/* highlight */
 .post pre {
   border: 1px solid #ddd;
   background-color: rgba(252, 252, 252, 0.8);
@@ -156,6 +174,68 @@ body {
   background-color: #333;
 }
 
+/* --highlight-- */
+
+.post ul{
+	margin-left: 0;
+}
+
+.categories {
+	padding-bottom: 3.5em;
+}
+
+.categories ul a.more{
+	float:right;
+	margin:0.8em 0.2em 0 0;
+	text-decoration: none;
+	font:0.9em consolas, arial;
+	color:#aaa;
+}
+
+.categories ul a.more:hover{
+	color:#333;
+}
+
+.categories li {
+	
+}
+
+.ca_title{
+	padding-bottom: 0.6em;
+	margin-top: 1em;
+	font-size: 2em;
+	border-bottom: 0.1em solid #ddd;
+}
+
+.po_title{
+	margin-top: 0.5em;
+	margin-left: 0.2em;
+	padding-bottom: 0.1em;
+	border-bottom: 0.1em dashed #bbb;
+}
+
+.ca_title a, .po_title a{
+	color: #000;
+}
+
+.po_title a:hover{
+	color: #a0a;
+}
+
+.breadcrumb{
+	color: #aaa;
+	font: 0.9em consolas, arial;
+}
+.breadcrumb a{
+	text-decoration: none;
+	color: #aaa;
+}
+.breadcrumb a.active{
+	color: #000;
+}
+.breadcrumb a:not(.active):hover{
+	color: #000;
+}
 
 .highlight code {
 	font-family: consolas, "Courier New", Courier, cursive;
