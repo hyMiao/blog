@@ -5,7 +5,16 @@ layout: default
 	<div class="post_info">
 	  <div class="title">{{ page.title }}</div>
 	  <div class="meta">
-	  	{{ page.author }}, {{ page.date | date_to_string }}
+	  	{% if page.author %}{{ page.author }},{% endif %} 
+        {{ page.date | date_to_string }}&nbsp;&nbsp;
+        Category:&nbsp;
+        {% if page.categories != empty %}
+            {% for category in page.categories %}
+                <a href="{{ site.baseurl }}/categories/{{ category }}">{{ category }}</a>
+            {% endfor %}
+        {% else %}
+            <a href="{{ site.baseurl }}/categories/none">None</a>
+        {% endif %}
 	  </div>
 	</div>
 	<div class="content clear">
