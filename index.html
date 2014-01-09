@@ -1,19 +1,72 @@
----
-layout: default
-title: Your New Jekyll Site
----
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Your New Jekyll Site</title>
+        <meta name="viewport" content="width=device-width">
 
-<div id="home" class="clear">
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/blog/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/blog/css/main.css">
+
+	      <!-- My CSS -->
+        <link rel="stylesheet" href="/blog/css/my.css">
+    </head>
+    <body>
+      <div class="site">
+        <div class="header">
+           <div class="title"><a href="/blog">Hy's Blog</a></div>
+           <div class="navbar">
+      	     <ul>
+              <li>
+                <a class="extra" href="/blog">home</a>
+    	        </li>
+           		<li>
+           		  <a class="extra" href="/blog/categories">category</a>
+           		</li>
+              <li>
+                <a class="extra" href="">contact</a>
+              </li>
+     	      </ul>
+   	      </div>
+   	    </div>
+
+          <div id="home" class="clear">
   <ul class="posts">
-    {% for post in site.posts %}
+    
       <li>
-        <a class="title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <span class="date" >{{ post.date | date_to_string }}</span>
-        {{ post.excerpt }}
-        <a class="comment_count" href="{{ site.baseurl }}{{ post.url }}#disqus_thread">Link</a>
-        <a class="more" href="{{ site.baseurl }}{{ post.url }}">More&gt;&gt;</a>
+        <a class="title" href="/blog/a/2013/10/15/hello-world.html">Hello World! 世界泥嚎！</a>
+        <span class="date" >15 Oct 2013</span>
+        <p>Jekyll+Github环境初步搭建完成~~~</p>
+
+<div class="highlight"><pre><code class="c"><span class="cm">/* hello world demo */</span>
+<span class="cp">#include &lt;stdio.h&gt;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">int</span> <span class="n">argc</span><span class="p">,</span> <span class="kt">char</span> <span class="o">**</span><span class="n">argv</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello, World!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>15 Oct 2013</p>
+
+        <a class="comment_count" href="/blog/a/2013/10/15/hello-world.html#disqus_thread">Link</a>
+        <a class="more" href="/blog/a/2013/10/15/hello-world.html">More&gt;&gt;</a>
       </li>
-    {% endfor %}
+    
+      <li>
+        <a class="title" href="/blog/jekyll/update/2013/10/12/welcome-to-jekyll.html">Welcome to Jekyll!</a>
+        <span class="date" >12 Oct 2013</span>
+        <p>You&#39;ll find this post in your <code>_posts</code> directory - edit this post and re-build (or run with the <code>-w</code> switch) to see your changes!
+To add new posts, simply add a file in the <code>_posts</code> directory that follows the convention: YYYY-MM-DD-name-of-post.ext.</p>
+
+        <a class="comment_count" href="/blog/jekyll/update/2013/10/12/welcome-to-jekyll.html#disqus_thread">Link</a>
+        <a class="more" href="/blog/jekyll/update/2013/10/12/welcome-to-jekyll.html">More&gt;&gt;</a>
+      </li>
+    
   </ul>
 
   <!-- Disqus Count(Unmodified) -->
@@ -34,3 +87,21 @@ title: Your New Jekyll Site
 </div>
 
 
+
+
+        <div class="footer clear">
+          <div class="contact">
+             <p>
+              Designed By Hy<br />
+              <a href="https://github.com/yourusername">github.com/hyMiao</a><br />
+             </p>
+           </div>
+           <div class="contact" style="float:right;">
+            <p>
+              Powered By <a href="http://jekyllrb.com/">Jekyll</a><br />              
+             </p>
+           </div>
+         </div>
+      </div>
+    </body>
+</html>
