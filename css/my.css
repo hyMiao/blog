@@ -11,7 +11,7 @@ body {
 	height:100%;
 	background: -webkit-gradient(linear, left top, left bottom, from(rgba(86, 142, 202, 0.22)), to(#f7f7f7));
     background: -moz-linear-gradient(top, rgb(211, 221, 238), #f7f7f7);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e3e3e3');
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f7f7f7', endColorstr='#e3e3e3');*/
     background-color: #f7f7f7;
     background-repeat: no-repeat;
 }
@@ -55,7 +55,7 @@ body {
 
 .posts li{
 	background-color: rgba(255, 255, 255, 0.97);
-	padding:1.5em 1.5em 2.5em 1.5em;
+	padding:1.5em;
 	margin:1.5em 0 1.5em 0;
 	border-radius:3px;
 	box-shadow: rgba(133, 133, 133, 0.63) 1px 1px 5px;
@@ -78,6 +78,17 @@ body {
 	float: right;
 	margin-right: 1.5em;
 	font-size:1em;
+}
+
+.posts li a.comment_count{
+	text-decoration: none;
+	font-size:1em;
+	color:#aaa;
+}
+
+.posts li a.comment_count:hover{
+	font-size:1em;
+	color:#aaa;
 }
 
 .posts li a.more{
