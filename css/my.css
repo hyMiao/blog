@@ -153,7 +153,12 @@ a{
   margin: 1.2em auto;
 }
 
-.post code {
+code{
+	border-radius:5px;
+	font-family: consolas, "Courier New", Courier, cursive;
+}
+
+.post pre code {
   border: 1px solid #ddd;
   background-color: rgba(252, 252, 252, 0.8);
   padding: 0 .2em;

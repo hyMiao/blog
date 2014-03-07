@@ -1,8 +1,8 @@
 name: Hy's Blog
 #source: .
 markdown: redcarpet
-baseurl: /blog
-#baseurl:  
+#baseurl: /blog
+baseurl:  
 pygments: true
 encoding: UTF-8
 
